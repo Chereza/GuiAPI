@@ -1,2 +1,2 @@
 # GuiAPI
-GuiAPI for Minecraft
+Gui API for Minecraft
