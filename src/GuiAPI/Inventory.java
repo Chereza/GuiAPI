@@ -1,0 +1,47 @@
+package GuiAPI;
+
+import java.util.LinkedHashMap;
+
+import org.bukkit.Bukkit;
+import org.bukkit.inventory.InventoryHolder;
+
+public class Inventory
+{
+		
+	public static LinkedHashMap<org.bukkit.inventory.Inventory, Inventory> inventories = new LinkedHashMap<>();
+	
+	org.bukkit.inventory.Inventory inventory;
+	
+	public InventoryHolder owner;
+	public String title;
+	public int size;
+	
+	LinkedHashMap<Integer, Listener> slotsAndListeners;
+	
+	public Inventory(InventoryHolder owner, int size, String title)
+	{
+		this.owner = owner;
+		this.title = title;
+		this.size = size * 9;
+		
+		inventory = Bukkit.createInventory(this.owner, this.size, this.title);		
+		slotsAndListeners = new LinkedHashMap<>();
+		
+		inventories.put(inventory, this);
+	}
+	
+	public org.bukkit.inventory.Inventory getInventory() { return inventory; }
+	
+	public void setEventListener(int slot, Listener listener)
+	{
+		slotsAndListeners.put(slot, listener);
+		inventories.put(inventory, this);
+	}
+	
+	public void runClickEvent(int slot)
+	{
+		if (slotsAndListeners.containsKey(slot))
+			slotsAndListeners.get(slot).onClick();
+	}
+
+}
