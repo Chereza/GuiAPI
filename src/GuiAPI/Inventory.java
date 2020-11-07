@@ -1,5 +1,6 @@
 package GuiAPI;
 
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 import org.bukkit.Bukkit;
