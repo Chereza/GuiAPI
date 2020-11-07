@@ -39,10 +39,14 @@ public class Inventory
 		inventories.put(inventory, this);
 	}
 	
-	public void runClickEvent(int slot)
+	public void runClickEvent(int slot, boolean isRightClick)
 	{
 		if (slotsAndListeners.containsKey(slot))
+		{
 			slotsAndListeners.get(slot).onClick();
+			if (isRightClick) slotsAndListeners.get(slot).onRightClick();
+			else slotsAndListeners.get(slot).onLeftClick();
+		}
 	}
 
 }

@@ -1,7 +1,0 @@
-name: GuiAPI
-
-author: Subaru
-api-version: 1.12
-version: 0.0.1
-
-main: GuiAPI.Plugin

@@ -7,7 +7,6 @@ import org.bukkit.event.inventory.InventoryCloseEvent;
 
 public class Events implements Listener
 {
-
 	
 	@EventHandler
 	public void InventoryCloseEvent(InventoryCloseEvent e) 
@@ -19,11 +18,9 @@ public class Events implements Listener
 	@EventHandler
 	public void InventoryClickEvent(InventoryClickEvent e)
 	{
+		if (Inventory.inventories.containsKey(e.getInventory())) e.setCancelled(true);
 		if (Inventory.inventories.containsKey(e.getClickedInventory()))
-		{
-			e.setCancelled(true);
-			Inventory.inventories.get(e.getClickedInventory()).runClickEvent(e.getSlot());
-		}
+			Inventory.inventories.get(e.getClickedInventory()).runClickEvent(e.getSlot(), e.isRightClick());
 	}
 
 }
