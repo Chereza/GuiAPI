@@ -20,7 +20,10 @@ public class Events implements Listener
 	public void InventoryClickEvent(InventoryClickEvent e)
 	{
 		if (Inventory.inventories.containsKey(e.getClickedInventory()))
+		{
+			e.setCancelled(true);
 			Inventory.inventories.get(e.getClickedInventory()).runClickEvent(e.getSlot());
+		}
 	}
 
 }

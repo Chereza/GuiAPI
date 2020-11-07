@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="GuiAPI.GuiAPI.AppTest" time="0.277" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="GuiAPI.GuiAPI.AppTest" time="0.28" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="13"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="TR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-13.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\Muhammed\AppData\Local\Temp\surefire5467112757938589662\surefirebooter18272151836524690361.jar C:\Users\Muhammed\AppData\Local\Temp\surefire5467112757938589662 2020-11-06T23-44-28_015-jvmRun1 surefire978782340665096680tmp surefire_09485087218231958571tmp"/>
+    <property name="sun.java.command" value="C:\Users\Muhammed\AppData\Local\Temp\surefire16301062031661424448\surefirebooter4682718679635063256.jar C:\Users\Muhammed\AppData\Local\Temp\surefire16301062031661424448 2020-11-07T10-28-36_235-jvmRun1 surefire2238533980808422650tmp surefire_06001237531868361138tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Muhammed\Desktop\eclipse-java-2020-03-R-win32-x86_64\v\GuiAPI\target\test-classes;C:\Users\Muhammed\Desktop\eclipse-java-2020-03-R-win32-x86_64\v\GuiAPI\target\classes;C:\Users\Muhammed\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Muhammed\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Muhammed\.m2\repository\org\spigotmc\spigot-api\1.12.2-R0.1-SNAPSHOT\spigot-api-1.12.2-R0.1-SNAPSHOT.jar;C:\Users\Muhammed\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Muhammed\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\Muhammed\.m2\repository\com\google\guava\guava\21.0\guava-21.0.jar;C:\Users\Muhammed\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;C:\Users\Muhammed\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\Muhammed\.m2\repository\net\md-5\bungeecord-chat\1.12-SNAPSHOT\bungeecord-chat-1.12-SNAPSHOT.jar;C:\Users\Muhammed\.m2\repository\net\luckperms\api\5.2\api-5.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Muhammed\AppData\Local\Temp\surefire5467112757938589662\surefirebooter18272151836524690361.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Muhammed\AppData\Local\Temp\surefire16301062031661424448\surefirebooter4682718679635063256.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="13.0.2+8"/>
@@ -55,5 +55,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="57.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="GuiAPI.GuiAPI.AppTest" time="0.001"/>
+  <testcase name="shouldAnswerWithTrue" classname="GuiAPI.GuiAPI.AppTest" time="0.003"/>
 </testsuite>

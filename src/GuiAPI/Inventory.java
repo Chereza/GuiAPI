@@ -16,7 +16,7 @@ public class Inventory
 	public String title;
 	public int size;
 	
-	HashMap<Integer, Listener> slotsAndListeners;
+	LinkedHashMap<Integer, Listener> slotsAndListeners;
 	
 	public Inventory(InventoryHolder owner, int size, String title)
 	{
@@ -25,7 +25,7 @@ public class Inventory
 		this.size = size * 9;
 		
 		inventory = Bukkit.createInventory(this.owner, this.size, this.title);		
-		slotsAndListeners = new HashMap<>();
+		slotsAndListeners = new LinkedHashMap<>();
 		
 		inventories.put(inventory, this);
 	}
